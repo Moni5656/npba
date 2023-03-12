@@ -1,0 +1,674 @@
+{
+  "name": "CBS-CDT-ATS Case Study 1",
+  "id": "5b98603e-8284-4569-bb76-ff645d90864d",
+  "information": "This network depicts the first case study, presented in [1]. Press the run button and switch to the results windows to see the computed delay and backlog bounds. Take a look at the plot window to see the resulting plots.\n\n[1]: E. Mohammadpour, E. Stai, M. Mohiuddin, and J.-Y. Le Boudec. \"Latency and Backlog Bounds in Time-Sensitive Networking with Credit Based Shapers and Asynchronous Traffic Shaping.\" In 2018 30th International Teletraffic Congress (ITC 30), volume 2, pages 1\u20136. IEEE, 2018.\n\n",
+  "node_counter": 10,
+  "edge_counter": 10,
+  "flow_counter": 13,
+  "configuration_counter": 1,
+  "nodes": [
+    {
+      "name": "H1",
+      "id": "d4204bd1-5dd5-4d23-8951-889f8123c366",
+      "x": 200,
+      "y": 400,
+      "configurations": [
+        {
+          "id": "b8a56aca-32cf-4a40-b0bd-d91e02f89f59",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "id": "d28f4e45-e323-4c89-a487-d01b2b54320e",
+      "x": 200,
+      "y": 180,
+      "configurations": [
+        {
+          "id": "d0de7192-b927-475c-8672-c025d7b8b8a2",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "H2",
+      "id": "55917c80-bafd-47b6-ba34-4251e01bb093",
+      "x": 370,
+      "y": 240,
+      "configurations": [
+        {
+          "id": "56eed22a-8465-41cf-beb4-a3100ea4b0f4",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "id": "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+      "x": 600,
+      "y": 180,
+      "configurations": [
+        {
+          "id": "ecbdc365-f67b-4e48-9b38-78da328ff24b",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "3",
+      "id": "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+      "x": 800,
+      "y": 180,
+      "configurations": [
+        {
+          "id": "52da1eec-fe85-457a-a89f-4125927e0c0e",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "H3",
+      "id": "461d5245-8439-48de-ae78-dfa804ded466",
+      "x": 1000,
+      "y": 180,
+      "configurations": [
+        {
+          "id": "9350da5f-d801-438b-8cdd-3a12a4b70153",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "H5",
+      "id": "1f032f2d-0da8-48a4-9509-78160086677a",
+      "x": 370,
+      "y": 400,
+      "configurations": [
+        {
+          "id": "4c08ed9c-3c36-4f7a-bdb3-22e6c925a12c",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "5",
+      "id": "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+      "x": 600,
+      "y": 400,
+      "configurations": [
+        {
+          "id": "cd4cb726-3af0-4605-99c3-cf62e2231036",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "4",
+      "id": "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+      "x": 800,
+      "y": 400,
+      "configurations": [
+        {
+          "id": "ae73fbf3-44d5-4470-95e4-1e092b7ffb74",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    },
+    {
+      "name": "H4",
+      "id": "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5",
+      "x": 1000,
+      "y": 400,
+      "configurations": [
+        {
+          "id": "7d183dc1-1e07-4a48-9ca3-29adce84cf5a",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "name": "E0",
+      "id": "0458016a-d0cd-4a77-83a2-0fbf1144e8ff",
+      "start_node": "d4204bd1-5dd5-4d23-8951-889f8123c366",
+      "end_node": "d28f4e45-e323-4c89-a487-d01b2b54320e",
+      "configurations": [
+        {
+          "id": "3fc4d8e7-9eeb-4a48-98f4-805a68999fdb",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "id": "03bf2c09-09bb-49a5-bb47-043f1b54ea06",
+      "start_node": "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+      "end_node": "d28f4e45-e323-4c89-a487-d01b2b54320e",
+      "configurations": [
+        {
+          "id": "e568de1d-58da-42c2-a9d8-3515ac68f181",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "id": "7877b6b4-8c1c-484d-a579-e02baaa40706",
+      "start_node": "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+      "end_node": "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+      "configurations": [
+        {
+          "id": "ee3306ec-2d93-439c-b0d4-ce2015bfe21e",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "id": "bb26cc71-5ea4-4564-adfc-c1bc066fd84b",
+      "start_node": "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+      "end_node": "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+      "configurations": [
+        {
+          "id": "43e3246d-2712-4ec5-be1e-4d89b37bce66",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "id": "a1afe3f1-bda3-4b89-95a2-e18af08e7f8f",
+      "start_node": "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5",
+      "end_node": "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+      "configurations": [
+        {
+          "id": "58933e6d-b523-49bb-abd8-214ce9a48352",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E5",
+      "id": "2b491f88-9fcd-4118-9611-375f3eaa2f6b",
+      "start_node": "55917c80-bafd-47b6-ba34-4251e01bb093",
+      "end_node": "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+      "configurations": [
+        {
+          "id": "08b4f804-98d7-4964-ab70-6664d5dff9eb",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E6",
+      "id": "a6204b0d-48d6-4c49-8f95-6e4728e9ccda",
+      "start_node": "461d5245-8439-48de-ae78-dfa804ded466",
+      "end_node": "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+      "configurations": [
+        {
+          "id": "15dd89ca-6386-44b9-8bd3-0d2c61f7794e",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E7",
+      "id": "10e531b0-57e3-4c97-8440-e312fc45b563",
+      "start_node": "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+      "end_node": "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+      "configurations": [
+        {
+          "id": "34b6d99f-d05a-4c1f-835f-61794f38ba36",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E8",
+      "id": "69c0e59f-9012-4d5b-8b51-d60b7e119fd4",
+      "start_node": "1f032f2d-0da8-48a4-9509-78160086677a",
+      "end_node": "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+      "configurations": [
+        {
+          "id": "eb10308f-9494-43a1-99e7-16f6f3000dc5",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    },
+    {
+      "name": "E9",
+      "id": "e45c849c-116b-4ad2-8c09-d27e2905a264",
+      "start_node": "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+      "end_node": "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+      "configurations": [
+        {
+          "id": "c24e6437-3557-4fee-87b5-a8e768005573",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "link_speed": 100.0,
+          "idsl_A": 50.0,
+          "sdsl_A": -50.0,
+          "idsl_B": 50.0,
+          "sdsl_B": -50.0,
+          "t_var_min": 0.0,
+          "t_var_max": 0.0,
+          "t_proc_min": 0.0,
+          "t_proc_max": 0.0
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "name": "f1",
+      "id": "87ba570b-3c5e-4f50-bb40-cab7f8914bdd",
+      "path": [
+        "d4204bd1-5dd5-4d23-8951-889f8123c366",
+        "d28f4e45-e323-4c89-a487-d01b2b54320e",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5"
+      ],
+      "color": "#00b351",
+      "highlight_color": "#00b351",
+      "configurations": [
+        {
+          "id": "a8a03034-19af-42f3-a7f8-e398a4d94352",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": true,
+          "regulation_rate": 20,
+          "l_min": 0.001,
+          "l_max": 0.001,
+          "type": "A",
+          "ac_type": "LRQ"
+        }
+      ]
+    },
+    {
+      "name": "f2",
+      "id": "1e54f07f-3673-44b5-87bd-a913c6b1a04b",
+      "path": [
+        "d4204bd1-5dd5-4d23-8951-889f8123c366",
+        "d28f4e45-e323-4c89-a487-d01b2b54320e",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "55917c80-bafd-47b6-ba34-4251e01bb093"
+      ],
+      "color": "#ffc803",
+      "highlight_color": "#ffc803",
+      "configurations": [
+        {
+          "id": "fc5a5ca9-bf3a-4b94-852f-768b0110f97f",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": true,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "A",
+          "ac_type": "LRQ"
+        }
+      ]
+    },
+    {
+      "name": "f3",
+      "id": "406d03d9-bcc5-42c1-915b-14419eff7ee0",
+      "path": [
+        "461d5245-8439-48de-ae78-dfa804ded466",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "1f032f2d-0da8-48a4-9509-78160086677a"
+      ],
+      "color": "#7430a5",
+      "highlight_color": "#7430a5",
+      "configurations": [
+        {
+          "id": "2af7b59a-66e5-40fe-a620-0d0be0f3606e",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": true,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "A",
+          "ac_type": "LRQ"
+        }
+      ]
+    },
+    {
+      "name": "f4",
+      "id": "dc6cfb8d-1e4d-4ca1-acea-60325a3026c1",
+      "path": [
+        "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "55917c80-bafd-47b6-ba34-4251e01bb093"
+      ],
+      "color": "#0bb8f5",
+      "highlight_color": "#0bb8f5",
+      "configurations": [
+        {
+          "id": "b30f48e8-33cc-4b4c-bea1-0d671b02b1d3",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": true,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "A",
+          "ac_type": "LRQ"
+        }
+      ]
+    },
+    {
+      "name": "f5",
+      "id": "1cc4ab57-cfc2-40e9-8845-71220ddb7b28",
+      "path": [
+        "1f032f2d-0da8-48a4-9509-78160086677a",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+        "461d5245-8439-48de-ae78-dfa804ded466"
+      ],
+      "color": "#ff0a0b",
+      "highlight_color": "#ff0a0b",
+      "configurations": [
+        {
+          "id": "042e3ac6-f654-4dcc-a458-3956076aa500",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": true,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "A",
+          "ac_type": "LRQ"
+        }
+      ]
+    },
+    {
+      "name": "cdt1",
+      "id": "0e732ea1-a3f5-451e-922c-02ac0ee467fb",
+      "path": [
+        "d4204bd1-5dd5-4d23-8951-889f8123c366",
+        "d28f4e45-e323-4c89-a487-d01b2b54320e",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+        "461d5245-8439-48de-ae78-dfa804ded466"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "b5d194e3-7d5d-463b-b989-c56582a75a50",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.004,
+          "l_max": 0.004,
+          "type": "CDT",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "cdt2",
+      "id": "4a6b10a0-d417-4165-95e1-06957ff33f8c",
+      "path": [
+        "55917c80-bafd-47b6-ba34-4251e01bb093",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "1f032f2d-0da8-48a4-9509-78160086677a"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "08749767-616a-45c4-80be-43c5ad79af6b",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.004,
+          "l_max": 0.004,
+          "type": "CDT",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "cdt3",
+      "id": "2c9fdb8c-f787-4c5b-95b3-c496551145cd",
+      "path": [
+        "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "d1f9746a-d74d-4196-9639-7dfb05066fae",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.004,
+          "l_max": 0.004,
+          "type": "CDT",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "cdt4",
+      "id": "5384594c-45a0-4ff9-b03b-a10fdda9afd6",
+      "path": [
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "2f4289ac-695a-402e-86b3-317a8c3662b5",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.004,
+          "l_max": 0.004,
+          "type": "CDT",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "be1",
+      "id": "30b5f86f-2dcd-432c-97b0-8258ed1e0509",
+      "path": [
+        "d4204bd1-5dd5-4d23-8951-889f8123c366",
+        "d28f4e45-e323-4c89-a487-d01b2b54320e",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7",
+        "461d5245-8439-48de-ae78-dfa804ded466"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "e19cb48f-a28a-4a41-a508-f39bc866e9d8",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "BE",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "be2",
+      "id": "905ee6e4-6579-463f-9d47-203697237a28",
+      "path": [
+        "55917c80-bafd-47b6-ba34-4251e01bb093",
+        "36bd5178-8acb-4a15-8ee3-48afd230b2b4",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe",
+        "1f032f2d-0da8-48a4-9509-78160086677a"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "0b2e03bb-415c-446e-8f65-c3d00cdc9678",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "BE",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "be3",
+      "id": "1703ab97-a34e-4fba-92c2-a0d9a84b9918",
+      "path": [
+        "082a11b6-f6b4-4300-a1bb-b6fce8bb11c5",
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "c2ad40f8-a5e1-495b-80b3-7cc9f2317af7"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "99502221-9e5f-4b0e-b3a6-fe6e47810aee",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "BE",
+          "ac_type": "LB"
+        }
+      ]
+    },
+    {
+      "name": "be4",
+      "id": "1d0dc91b-7b30-4f28-94af-36508e75f3f6",
+      "path": [
+        "c8d1135b-43d3-4ead-9bb2-2a09f2d0556c",
+        "a1bad299-ebc8-4f80-a43d-63810fb731fe"
+      ],
+      "color": "#fffffe",
+      "highlight_color": "#fffffe",
+      "configurations": [
+        {
+          "id": "0582293b-21f0-4a3d-b162-6eb5abff0514",
+          "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+          "is_flow_of_interest": false,
+          "regulation_rate": 20.0,
+          "l_min": 0.002,
+          "l_max": 0.002,
+          "type": "BE",
+          "ac_type": "LB"
+        }
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "id": "49d4d779-3d0a-4872-8bda-16219f0d3a86",
+      "group_id": "9c32b996-6f0f-4d90-a73c-be016ee2509a",
+      "name": "CBS-CDT-ATS-0",
+      "_configuration_class": "CBS-CDT-ATS",
+      "is_active": true,
+      "flow_ids_of_interest": [
+        "87ba570b-3c5e-4f50-bb40-cab7f8914bdd",
+        "1e54f07f-3673-44b5-87bd-a913c6b1a04b",
+        "406d03d9-bcc5-42c1-915b-14419eff7ee0",
+        "dc6cfb8d-1e4d-4ca1-acea-60325a3026c1",
+        "1cc4ab57-cfc2-40e9-8845-71220ddb7b28"
+      ]
+    }
+  ]
+}

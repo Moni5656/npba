@@ -1,0 +1,961 @@
+{
+  "name": "CBS Case Study",
+  "id": "5b98603e-8284-4569-bb76-ff645d90864d",
+  "information": "This network depicts the first case study, presented in [1]. Press the run button and switch to the results windows to see the computed delay and backlog bounds. Take a look at the plot window to see the resulting plots.\n\n[1]: J. A. R. De Azua and M. Boyer, \u201cComplete modelling of AVB in network calculus framework\u201d in Proceedings of the 22nd International Conference on Real-Time Networks and Systems. Versaille, France: ACM Press, Oct. 2014, pp. 55\u201364.\n\n",
+  "node_counter": 5,
+  "edge_counter": 4,
+  "flow_counter": 20,
+  "configuration_counter": 2,
+  "nodes": [
+    {
+      "name": "Front Camera",
+      "id": "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+      "x": 0,
+      "y": 200,
+      "configurations": [
+        {
+          "id": "686d70d4-657d-4ff7-ab2b-bf1571df794a",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b"
+        },
+        {
+          "id": "9fa774d7-b02e-4dc1-964a-8eddc505686c",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052"
+        }
+      ]
+    },
+    {
+      "name": "Front Switch",
+      "id": "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+      "x": 0,
+      "y": 0,
+      "configurations": [
+        {
+          "id": "aec70086-82d8-48cb-bfec-541322241517",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b"
+        },
+        {
+          "id": "4b00d7c4-ba56-4f6e-8cad-8c9597e41f3c",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052"
+        }
+      ]
+    },
+    {
+      "name": "Back Switch",
+      "id": "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+      "x": 250,
+      "y": 0,
+      "configurations": [
+        {
+          "id": "b621ed05-d895-4e59-9135-cefb28e69ebb",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b"
+        },
+        {
+          "id": "dbe2130a-49cf-425c-a6b9-5ad04a1b2b18",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052"
+        }
+      ]
+    },
+    {
+      "name": "Head Unit",
+      "id": "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+      "x": 250,
+      "y": 200,
+      "configurations": [
+        {
+          "id": "b2518a44-27b2-4005-bbc0-0423b1df2070",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b"
+        },
+        {
+          "id": "31e3075b-8256-4c74-8e9d-667cbb1f60d6",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052"
+        }
+      ]
+    },
+    {
+      "name": "Rear Unit",
+      "id": "a8ac9b42-572b-4ef3-aeaa-0792e0243a35",
+      "x": 500,
+      "y": 0,
+      "configurations": [
+        {
+          "id": "1b5ca560-df48-4be0-9b9d-80587ccf1de1",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b"
+        },
+        {
+          "id": "018995a6-24c4-46eb-aa61-7701d994d735",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "name": "E1",
+      "id": "6defddb2-f2e8-4f24-b68b-23735f2649de",
+      "start_node": "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+      "end_node": "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+      "configurations": [
+        {
+          "id": "4bc51ed0-23c6-4d79-83c7-ae9784c9e292",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "link_speed": 100.0,
+          "idle_slope_a": 65.0,
+          "send_slope_a": -35.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        },
+        {
+          "id": "55c5334d-d68d-4d27-aeb4-f6d480a1371c",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "link_speed": 100.0,
+          "idle_slope_a": 65.0,
+          "send_slope_a": -35.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "id": "7d991e4c-ac43-4cc8-baa6-a03b4ef666ff",
+      "start_node": "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+      "end_node": "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+      "configurations": [
+        {
+          "id": "ba0bdfd2-1476-41ab-be69-9c5960059679",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "link_speed": 100.0,
+          "idle_slope_a": 65.0,
+          "send_slope_a": -35.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        },
+        {
+          "id": "65020e69-18a5-41cf-aad5-0628a0bb5c23",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "link_speed": 100.0,
+          "idle_slope_a": 65.0,
+          "send_slope_a": -35.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "id": "261ae32c-c815-4d56-bc97-99256db690cc",
+      "start_node": "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+      "end_node": "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+      "configurations": [
+        {
+          "id": "da2fdeac-9fe9-4d1b-a893-a558827c0b66",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "link_speed": 100.0,
+          "idle_slope_a": 75.0,
+          "send_slope_a": -25.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        },
+        {
+          "id": "786d5129-8ca9-47bb-a828-bdb493ea4656",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "link_speed": 100.0,
+          "idle_slope_a": 75.0,
+          "send_slope_a": -25.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "id": "d492d0e5-59c4-4f4d-a894-05fca49a6577",
+      "start_node": "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+      "end_node": "a8ac9b42-572b-4ef3-aeaa-0792e0243a35",
+      "configurations": [
+        {
+          "id": "cc298109-d44e-4b89-9d05-d32411151a4d",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "link_speed": 100.0,
+          "idle_slope_a": 75.0,
+          "send_slope_a": -25.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        },
+        {
+          "id": "a338a1ac-1e4a-46d4-8ff1-c54a6d3d1637",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "link_speed": 100.0,
+          "idle_slope_a": 75.0,
+          "send_slope_a": -25.0,
+          "idle_slope_b": 50.0,
+          "send_slope_b": -50.0
+        }
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "name": "F0",
+      "id": "f7d73708-8c8f-4629-80ee-8e254117dc75",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#3070B3",
+      "highlight_color": "#3070B3",
+      "configurations": [
+        {
+          "id": "def3d16c-d968-4b5f-9c36-f06e7ad59eea",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": true,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "c681249d-606d-4520-a7cd-6cb2429fb150",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": true,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F1",
+      "id": "97cfcea1-b6d6-41e8-929a-0b3b7f969b7e",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#8F81EA",
+      "highlight_color": "#8F81EA",
+      "configurations": [
+        {
+          "id": "de59235f-87c4-46bc-9adb-77ad09cf1345",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "376a3e25-4ccf-44ac-9285-236920cea366",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F2",
+      "id": "c2f90755-bc75-4695-a31f-97c158d56baf",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#B55CA5",
+      "highlight_color": "#B55CA5",
+      "configurations": [
+        {
+          "id": "33f78c99-374f-42ef-9bfb-4d7b14986b3c",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "5906c6bf-7abc-40e5-9add-0b1bfcee9584",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F3",
+      "id": "9035190b-3b85-4bc1-80b7-82f9d356cfe1",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#8F81EA",
+      "highlight_color": "#8F81EA",
+      "configurations": [
+        {
+          "id": "b0021baa-20a9-4818-9c98-f14c7e006fd5",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "241da9db-663b-4184-b678-86c7be748cdc",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F4",
+      "id": "770b1e9d-e909-49e7-9ce3-be5aaa7fda89",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#B55CA5",
+      "highlight_color": "#B55CA5",
+      "configurations": [
+        {
+          "id": "c68a646a-7086-4960-9ac3-6c75f9ddc950",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "ef44c883-8140-4a96-94a3-389510043111",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F5",
+      "id": "a6693ccb-75bd-4b30-8be8-7aaf8c2e5a95",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#F7811E",
+      "highlight_color": "#F7811E",
+      "configurations": [
+        {
+          "id": "a63b02b5-c783-48bf-82f6-1affe5d1a32f",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "84209f0c-1588-42c1-b266-90414ac2ecff",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F6",
+      "id": "def7399f-108c-4c07-b8a7-7ba1a6935635",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#FED702",
+      "highlight_color": "#FED702",
+      "configurations": [
+        {
+          "id": "f6327030-7e30-4e0a-9b11-a8b82c649908",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "0a51b46b-48df-4378-9d2e-e9c89db4fac6",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F7",
+      "id": "497b6fcd-8df8-4a91-9550-2cb03c24295b",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#D95117",
+      "highlight_color": "#D95117",
+      "configurations": [
+        {
+          "id": "499f1a98-d274-4a67-8471-4682e90bbd5c",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "e13a8dc4-13f7-47d1-99c5-98852e6b2fd8",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F8",
+      "id": "47919a87-1e9d-4a1e-86f6-a5519654c2a5",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#9FBA36",
+      "highlight_color": "#9FBA36",
+      "configurations": [
+        {
+          "id": "0b2c042c-4eab-4beb-9e59-4bc1b7fee7df",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "ace0a760-30bf-4c75-9be7-ec0511d0f50c",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F9",
+      "id": "b6b29572-5708-4ffd-95c7-7c38b6a96a68",
+      "path": [
+        "e93ba97a-67cb-4f1e-a8d9-4a05e3ec47b0",
+        "0b1cf2db-f1e7-4a36-ba0a-0fc80970ad7a",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#6A757E",
+      "highlight_color": "#6A757E",
+      "configurations": [
+        {
+          "id": "0ba101b5-be0c-40ac-9ad9-a23cebe1b884",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "d7438b43-c47f-4704-a3ee-8c5e056a3f5d",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F10",
+      "id": "85fc9e6f-6bfd-4308-9f34-0f4ead063074",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#F7811E",
+      "highlight_color": "#F7811E",
+      "configurations": [
+        {
+          "id": "4d313526-dd40-4da8-bd0d-0b72ab21701f",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "6f8fd290-711a-4029-b168-347f64320fa3",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F11",
+      "id": "2862abf0-81d4-4d92-bd9d-6aee0e5c7746",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#FED702",
+      "highlight_color": "#FED702",
+      "configurations": [
+        {
+          "id": "95bed9a5-8f68-48e5-b957-d68fdece7820",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "769fa4fa-a9c4-4718-8554-849b757866fd",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F12",
+      "id": "14234d0f-e76a-42fb-9ac7-f8a2dc6c0b62",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#D95117",
+      "highlight_color": "#D95117",
+      "configurations": [
+        {
+          "id": "f27f5586-3d62-4a94-9a29-fa5f513f652e",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "9ae770e2-40b2-4a1c-933d-32a083894689",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F13",
+      "id": "a05a51a4-4529-43c4-8c45-cb8545726e13",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#D95117",
+      "highlight_color": "#D95117",
+      "configurations": [
+        {
+          "id": "9f2ca917-ea12-409f-ab25-33ab36d92ec0",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "2d52d40e-dd70-4b59-a3a8-2e68f696c14e",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F14",
+      "id": "5369c4f7-eba7-4881-a902-2cc679e9224a",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#FED702",
+      "highlight_color": "#FED702",
+      "configurations": [
+        {
+          "id": "a2d10f9c-ecd5-45b1-8d18-4a721a51219f",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "61c9924a-2c3c-4caa-9401-162121767822",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F15",
+      "id": "9c271400-f11f-4224-9c5b-723eda5b63e1",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#D95117",
+      "highlight_color": "#D95117",
+      "configurations": [
+        {
+          "id": "10dd0888-1df5-49d6-a240-d3d6a98a14da",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "4afef1b3-3f56-417a-9fb0-d9c6434233bd",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F16",
+      "id": "fbf634bc-215d-485b-8be7-0703f35fa12f",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#9FBA36",
+      "highlight_color": "#9FBA36",
+      "configurations": [
+        {
+          "id": "11f03d64-4824-455e-bf3d-0cdd29748e68",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "a90a73c8-a1e5-42b6-8981-bf1da317c5a6",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F17",
+      "id": "57b0bb80-f8be-45df-8e72-7c434face717",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#6A757E",
+      "highlight_color": "#6A757E",
+      "configurations": [
+        {
+          "id": "4cdf6aad-7986-4e02-8f10-8df30e8d26a8",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "08ae8b70-1eb3-4087-8cc2-d1470db0c837",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F18",
+      "id": "9ee1dd34-bbcf-4423-8372-5d49f8b6bf94",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#9ABCE4",
+      "highlight_color": "#9ABCE4",
+      "configurations": [
+        {
+          "id": "eabfce5f-3514-4d3c-91b0-f4633df9f96f",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "4605cbd1-da37-45d0-ac28-23c3d48edc64",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    },
+    {
+      "name": "F19",
+      "id": "a8380903-e2cd-48c9-b91e-09cb58d728d9",
+      "path": [
+        "43ad3f4e-f2a8-4b30-bea9-29bae6253dea",
+        "4ff8d491-aceb-4e0d-abf3-8c38a467c897",
+        "a8ac9b42-572b-4ef3-aeaa-0792e0243a35"
+      ],
+      "color": "#C9C2F5",
+      "highlight_color": "#C9C2F5",
+      "configurations": [
+        {
+          "id": "a009c41f-66ed-47db-981c-72fbea1edf26",
+          "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval_numerator": 1,
+          "class_measurement_interval_denominator": 100,
+          "max_interval_frame": 10
+        },
+        {
+          "id": "9050dad9-7ecc-4f53-a115-f58fd1ff68cd",
+          "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+          "is_flow_of_interest": false,
+          "avb_class": "A",
+          "is_periodic": true,
+          "is_worst_case": false,
+          "max_frame_size": 64,
+          "class_measurement_interval": 0.01,
+          "max_interval_frame": 10
+        }
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "id": "b19e3424-a953-4973-aaac-c3c09549c329",
+      "group_id": "92d7da05-090b-4895-a0cb-9e81625a7f8b",
+      "name": "Nancy-CBS",
+      "_configuration_class": "Nancy-CBS",
+      "is_active": true,
+      "flow_ids_of_interest": [
+        "f7d73708-8c8f-4629-80ee-8e254117dc75"
+      ],
+      "max_frame_size_a": 64,
+      "max_frame_size_b": 1522,
+      "max_frame_size_nsr": 1522,
+      "is_strict": false,
+      "plot_on_change_in_browser": false
+    },
+    {
+      "id": "264a775c-b2b0-4f16-916e-5389f88a2f1f",
+      "group_id": "162c22f2-17bd-4fee-88d4-5798878e9052",
+      "name": "RTCToolbox-CBS",
+      "_configuration_class": "rtctoolbox-matlab-CBS",
+      "is_active": true,
+      "flow_ids_of_interest": [
+        "f7d73708-8c8f-4629-80ee-8e254117dc75"
+      ],
+      "save_matlab_plots": false,
+      "max_frame_size_a": 64,
+      "max_frame_size_b": 1522,
+      "max_frame_size_nsr": 1522,
+      "is_strict": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>bin\Debug\</OutputPath>
+        <DebugType>full</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Unipi.Nancy" Version="1.0.11" />
+        <PackageReference Include="XPlot.Plotly" Version="4.0.6" />
+    </ItemGroup>
+
+
+</Project>

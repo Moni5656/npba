@@ -1,0 +1,9 @@
+﻿<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Publish CBS to folder" type="DotNetFolderPublish"
+                   factoryName="Publish to folder">
+        <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable"
+                      target_folder="$PROJECT_DIR$/CBS/bin/Release/net7.0/publish" target_framework="net7.0"
+                      uuid_high="2868420014399045819" uuid_low="-8251559973670329771"/>
+        <method v="2"/>
+    </configuration>
+</component>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBS", "CBS\CBS.csproj", "{27CEACCE-38E0-40BB-8D7C-91EC2E8C6255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Case Study", "Case Study\Case Study.csproj", "{31732AB5-3AED-41EE-87B2-8BAD70037671}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27CEACCE-38E0-40BB-8D7C-91EC2E8C6255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CEACCE-38E0-40BB-8D7C-91EC2E8C6255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CEACCE-38E0-40BB-8D7C-91EC2E8C6255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CEACCE-38E0-40BB-8D7C-91EC2E8C6255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31732AB5-3AED-41EE-87B2-8BAD70037671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31732AB5-3AED-41EE-87B2-8BAD70037671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31732AB5-3AED-41EE-87B2-8BAD70037671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31732AB5-3AED-41EE-87B2-8BAD70037671}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(RiderSharedRunConfigurations) = postSolution
+		File = .build\Publish CBS to folder.run.xml
+	EndGlobalSection
+EndGlobal

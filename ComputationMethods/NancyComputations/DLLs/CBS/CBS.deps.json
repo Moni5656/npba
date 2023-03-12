@@ -1,0 +1,170 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CBS/1.0.0": {
+        "dependencies": {
+          "Unipi.Nancy": "1.0.11",
+          "XPlot.Plotly": "4.0.6"
+        },
+        "runtime": {
+          "CBS.dll": {}
+        }
+      },
+      "FSharp.Core/4.7.2": {
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Core.dll": {
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.700.20.27008"
+          }
+        },
+        "resources": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "JsonSubTypes/1.9.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/JsonSubTypes.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "NLog/4.7.15": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.15.867"
+          }
+        }
+      },
+      "Unipi.Nancy/1.0.11": {
+        "dependencies": {
+          "JsonSubTypes": "1.9.0",
+          "NLog": "4.7.15",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Unipi.Nancy.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "XPlot.Plotly/4.0.6": {
+        "dependencies": {
+          "FSharp.Core": "4.7.2",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/XPlot.Plotly.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.0.5.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CBS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FSharp.Core/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w3XFVTnyZUbC8e2QT6a85ern6y7eQPPk+MYemz1FP0iBfgZcembL+wmo5cIZ1kxB8jfoXC8Q9KVkOMsGpkBKbA==",
+      "path": "fsharp.core/4.7.2",
+      "hashPath": "fsharp.core.4.7.2.nupkg.sha512"
+    },
+    "JsonSubTypes/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b7BHm3Oo5mqcIUWogcUsjOya9PmkNyLmwWtRfeCHwgGGXMGEFiz95ZxqfZQPXqxJRFr+2IxoiIcDv10tWUmvTQ==",
+      "path": "jsonsubtypes/1.9.0",
+      "hashPath": "jsonsubtypes.1.9.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "NLog/4.7.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vXMmsK17hXnMsKd8BdCrJzvb8JMT0+cPgBGRfnqcXIb6y8b6RMIZexO4hMhQgifcTHgU7dbubvCR5A5wX6Ne+A==",
+      "path": "nlog/4.7.15",
+      "hashPath": "nlog.4.7.15.nupkg.sha512"
+    },
+    "Unipi.Nancy/1.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-biR/LVQzpTlXm+bj+0aSVbKHiiza5WMF15fyyeKSwvyOwo0NuFY0FZy/pF8bqpufolqPjDF5UB8kIT9cJq6FKA==",
+      "path": "unipi.nancy/1.0.11",
+      "hashPath": "unipi.nancy.1.0.11.nupkg.sha512"
+    },
+    "XPlot.Plotly/4.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5qLab8jB4ZxmRl2z+Me47k5fsMOW0vPiAXpuoYashGUmolP3+xDg1SWsvodsbr+Q6ipcJhp97Cyq8qDzCHFEDA==",
+      "path": "xplot.plotly/4.0.6",
+      "hashPath": "xplot.plotly.4.0.6.nupkg.sha512"
+    }
+  }
+}
