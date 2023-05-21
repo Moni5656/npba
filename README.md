@@ -1,19 +1,19 @@
 # Interactive Tool for Performance Bound Calculation in TSN and Non-TSN Networks
-
 The Network Performance Bounds Analyzer provides methods to create a visual representation of a network, generate random
 networks, calculate
 end-to-end delay and backlog bounds, and plot results.
 Currently, we support two TSN models (Credit Based Shaper ([CBS]) and CBS with Control-Data Traffic
 (CDT) and Asynchronous Traffic Shaper ([ATS])), and a machine learning approach based on [DeepTMA].
 It runs on macOS, Windows, and Linux.
-
+<img width="1850" alt="screenshot" src="https://github.com/Moni5656/npba/assets/54207942/11117a0c-f732-42bc-bfb7-6e8a79372b82">
 ## Installation
 
 * [MATLAB] R2022b
+
 * [RTC Toolbox]
 * [.NET] Runtime 7.0
 * Java Runtime Environment >=19
-* Install depencencies:
+* Install dependencies:
 
 ```console
 pip install networkx
