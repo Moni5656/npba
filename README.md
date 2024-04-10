@@ -6,6 +6,7 @@ Currently, we support two TSN models (Credit Based Shaper ([CBS]) and CBS with C
 (CDT) and Asynchronous Traffic Shaper ([ATS])), and a machine learning approach based on [DeepTMA].
 It runs on macOS, Windows, and Linux.
 <img width="1850" alt="screenshot" src="https://github.com/Moni5656/npba/assets/54207942/11117a0c-f732-42bc-bfb7-6e8a79372b82">
+
 ## Installation
 
 * [MATLAB] R2022b
@@ -63,3 +64,32 @@ pip install gitpython
 [Ghostscript]: https://www.ghostscript.com
 
 [Latex]: https://github.com/garrettj403/SciencePlots/wiki/FAQ#installing-latex
+
+## References
+
+This project references and uses the following works:
+
+* Wandeler E, Thiele L. 
+  _Real-Time Calculus (RTC) Toolbox_.
+  http://www.mpa.ethz.ch, 2008.
+
+* R. Queck. 
+  _Analysis of Ethernet AVB for automotive networks using network calculus_. 
+  In Proc. of IEEE Int. Conf. on Vehicular Electronics and Safety(ICVES 2012). 
+  IEEE, 2012.
+  https://doi.org/10.1109/ICVES.2012.6294261
+
+* J. A. R. De Azua and M. Boyer. 
+ _Complete modelling of AVB in network calculus framework_. 
+ In Proceedings of the 22nd International Conference on Real-Time Networks and Systems. Versaille, France: ACM Press, Oct. 2014, pp. 55-64.
+ https://doi.org/10.1145/2659787.2659810
+
+* E. Mohammadpour, E. Stai, M. Mohiuddin, and J.-Y. Le Boudec. 
+  _Latency and Backlog Bounds in Time-Sensitive Networking with Credit Based Shapers and Asynchronous Traffic Shaping_. 
+  In 2018 30th International Teletraffic Congress (ITC 30), volume 2, pages 1–6. IEEE, 2018.
+  https://doi.org/10.1109/ITC30.2018.10053
+
+* R. Zippo and G. Stea.
+  _Nancy: An efficient parallel Network Calculus library_.
+  In SoftwareX, Volume 19. Elsevier, 2022.
+  https://doi.org/10.1016/j.softx.2022.101178
